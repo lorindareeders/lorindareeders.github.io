@@ -1623,4 +1623,12 @@ figcaption {
     text-align: center;
   }
 }
+@media only screen and (max-width: 767px) {
+  .section-heading, .paragraph-light {
+    text-align: center;
+    padding-left: 20px; /* Adjust the padding value as needed */
+    padding-right: 20px; /* Adjust the padding value as needed */
+  }
+}
+
 
