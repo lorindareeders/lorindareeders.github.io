@@ -1,6 +1,3 @@
-To modify your existing HTML form to use a `mailto` action for sending an email directly from the form, you need to adjust the `form` tag's `action` and `method` attributes, and utilize `GET` to append form data to the email. Below is the edited HTML based on your provided code:
-
-```html
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://webflow.com  -->
 <!--  Last Published: Mon Jun 17 2024 07:26:15 GMT+0000 (Coordinated Universal Time)  -->
@@ -41,12 +38,24 @@ To modify your existing HTML form to use a `mailto` action for sending an email 
   <div class="heading-jumbo-small"> CONTACT <br></div>
   <div class="container">
     <div class="w-layout-blockcontainer w-container">
-      <div id="w-node-_3f61509a-fac7-b0d5-3763-509be705858e-0e5249af" class="contact-form-wrap">
+      <div class="contact-form-wrap">
         <div class="contact-form-heading-wrap">
           <h2 class="contact-heading">Contact us</h2>
           <div class="paragraph-light">Please feel free to contact us. </div>
         </div>
         <div class="contact-form w-form">
-          <form action="mailto:info@example.com" method="get" enctype="text/plain" data-name="Get In Touch Form" name="wf-form-Get-In-Touch-Form" id="email-form" class="get-in-touch-form" data-wf-page-id="666d9a435dd729e20e5249af" data-wf-element-id="3f61509a-fac7-b0d5-3763-509be7058595">
+          <form action="/send_email" method="post" class="get-in-touch-form">
+            <label for="Name">Name</label>
+            <input type="text" class="w-input" maxlength="256" name="name" data-name="Name" placeholder="Enter your name" id="Name" required>
             <label for="Email">Email Address</label>
-            <
+            <input type="email" class="w-input" maxlength="256" name="email" data-name="Email" placeholder="Enter your email" id="Email" required>
+            <label for="Message">Message</label>
+            <textarea id="Message" name="message" maxlength="5000" data-name="Message" placeholder="Hi there, I’m reaching out because..." class="w-input" required></textarea>
+            <input type="submit" value="Submit" data-wait="Please wait..." class="button w-button">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
