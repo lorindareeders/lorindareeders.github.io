@@ -1628,3 +1628,6 @@ figcaption {
 }
 
 
+a.navigation-item.w-nav-link.w--current[href="sold-original-artworks"] {
+  text-decoration: none; /* Remove underline */
+}
