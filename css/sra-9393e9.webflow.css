@@ -1625,11 +1625,16 @@ figcaption {
   #w-node-_86e64837-0616-515b-4568-76c147234d4c-0e5249aa {
     grid-area: 1 / 1 / 2 / 2;
   }
+}
+
 /* Ensure no underline for the SOLD link when not on the SOLD page */
 a.navigation-item.w-nav-link[href="sold-original-artworks"] {
   text-decoration: none !important;
 }
 
-
+/* Ensure no underline for the SOLD link when hovered or active */
+a.navigation-item.w-nav-link[href="sold-original-artworks"]:hover,
+a.navigation-item.w-nav-link[href="sold-original-artworks"]:active,
+a.navigation-item.w-nav-link[href="sold-original-artworks"].w--current {
+  text-decoration: none !important;
 }
-
