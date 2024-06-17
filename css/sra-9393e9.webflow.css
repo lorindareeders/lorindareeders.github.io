@@ -1627,7 +1627,11 @@ figcaption {
   }
 }
 
-
 a.navigation-item.w-nav-link.w--current[href="sold-original-artworks"] {
   text-decoration: none; /* Remove underline */
 }
+
+.navigation .w-nav-menu .w--current {
+  text-decoration: none !important; /* Force remove underline */
+}
+
