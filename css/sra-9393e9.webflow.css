@@ -335,7 +335,7 @@ figcaption {
   margin-bottom: 0;
   padding-left: 0;
   padding-right: 40px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .heading-jumbo {
@@ -1183,6 +1183,10 @@ figcaption {
     display: none;
   }
 
+  .paragraph-light {
+    text-align: center;
+  }
+
   .heading-jumbo {
     font-size: 56px;
     line-height: 70px;
@@ -1521,6 +1525,11 @@ figcaption {
     max-width: none;
   }
 
+  .paragraph-light {
+    text-align: center;
+    padding-right: 0;
+  }
+
   .heading-jumbo {
     font-size: 36px;
     line-height: 48px;
@@ -1615,19 +1624,6 @@ figcaption {
 
   #w-node-_86e64837-0616-515b-4568-76c147234d4c-0e5249aa {
     grid-area: 1 / 1 / 2 / 2;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .section-heading, .paragraph-light {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .section-heading, .paragraph-light {
-    text-align: center;
-    padding-left: 20px; /* Adjust the padding value as needed */
-    padding-right: 20px; /* Adjust the padding value as needed */
   }
 }
 
